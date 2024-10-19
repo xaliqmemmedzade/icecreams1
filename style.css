@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    max-width: 1140px;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: rgb(226, 164, 49);
+    font-family: "Roboto", serif;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+nav {
+    background-color: rgba(156, 62, 52);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    color: #f7f8fb;
+    margin-top: 30px;
+
+    input {
+        padding: 10px;
+        font-size: 17px;
+        border-radius: 8px;
+        outline: none;
+        box-shadow: black;
+        border: none;
+    }
+}
+
+.section-heading {
+    margin-block: 70px;
+    text-align: center;
+    color: #fff;
+
+    * {
+        margin-bottom: 20px;
+    }
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    height: 240px;
+
+}
+
+.icecreams {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 30px;
+    color: #fff;
+
+    .icecream {
+        box-shadow: 0 0 10px 3px #fff;
+        padding: 20px;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                cursor: pointer;
+                padding: 5px 15px;
+                font-size: 20px;
+                color: #fff;
+                background-color: rgb(156, 62, 52);
+            }
+        }
+
+        h3 {
+            margin-block: 15px;
+        }
+
+    }
+}
+
+.button {
+    height: 110px;
+    width: 110px;
+    position: fixed;
+    bottom: 700px;
+    right: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 4px white;
+    cursor: pointer;
+}
+
+.quick-basket-card {
+    background-color: #fff;
+    width: 400px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    gap: 4px;
+    left: -410px;
+    transition: all .4s;
+    padding: 30px;
+    .totalprice{
+        margin-top: 20px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .quickProducts {
+        padding: 0;
+        height: 80vh;
+        overflow-y: auto;
+        margin: 0;
+        list-style: none;
+
+        li {
+            border: 1px solid rgb(230, 166, 37);
+            box-shadow: 0 0 10px -1px rgba(220, 155, 25, 0.738);
+            padding: 5px 20px;
+
+            img {
+                height: 50px;
+                width: 50px;
+            }
+
+            div:first-child {
+                margin-bottom: 15px;
+            }
+
+            h5 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+
+            div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            button {
+                cursor: pointer;
+                padding: 4px 8px;
+                font-size: 20px;
+                color: #fff;
+                background-color: rgb(101, 35, 25);
+                margin-inline: 7px;
+            }
+        }
+    }
+
+}
